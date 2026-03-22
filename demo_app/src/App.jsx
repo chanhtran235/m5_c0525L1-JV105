@@ -1,33 +1,17 @@
 import React from 'react'
 import './App.css'
+import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/js/bootstrap.js"
 import {getAll} from "./service/StudentService.js";
-import Header from "./component/Header.jsx";
+import Header from "./component/HeaderComponent.jsx";
+import HeaderComponent from "./component/HeaderComponent.jsx";
+import ListComponent from "./component/ListComponent.jsx";
 function App() {
   return (
       <>
-          <Header/>
-         <h1>Danh sách</h1>
-          <table>
-              <thead>
-               <tr>
-                   <th>STT</th>
-                   <th>ID</th>
-                   <th>Name</th>
-               </tr>
-              </thead>
-              <tbody>
-              {
-                  getAll().map((student,i)=>(
-                      <tr key={student.id}>
-                          <td>{i}</td>
-                          <td>{student.id}</td>
-                          <td>{student.name}</td>
-                      </tr>
-                  ))
-              }
-              </tbody>
-          </table>
-      </>
+          <HeaderComponent/>
+          <ListComponent/>
+        </>
 
   );
 }

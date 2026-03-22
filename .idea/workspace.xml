@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f0d920-5cc1-4f85-9c85-c14a465c905f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo_app/src/component/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo_app/src/service/StudentService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_app/src/component/DeleteComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_app/src/component/ListComponent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/src/component/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/component/HeaderComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/src/service/StudentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/service/StudentService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JSX File" />
         <option value="JavaScript File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -33,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.demo.js.executor": "Run",
-    "Node.js.demo1.js.executor": "Run",
-    "Node.js.demo2.js.executor": "Run",
-    "Node.js.index.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.demo.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.demo1.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.demo2.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,7 +75,10 @@
       <workItem from="1773750481484" duration="257000" />
       <workItem from="1773750748881" duration="123000" />
       <workItem from="1773750883763" duration="6940000" />
-      <workItem from="1773927310696" duration="2951000" />
+      <workItem from="1773927310696" duration="3004000" />
+      <workItem from="1773979041265" duration="13000" />
+      <workItem from="1774097138708" duration="501000" />
+      <workItem from="1774097910066" duration="4769000" />
     </task>
     <servers />
   </component>
