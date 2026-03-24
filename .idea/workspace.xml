@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f0d920-5cc1-4f85-9c85-c14a465c905f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo_app/src/component/DeleteComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo_app/src/component/ListComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_app/src/component/Add.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_app/src/component/Delete.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_app/src/component/List.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_app/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_app/src/component/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/component/HeaderComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_app/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/src/component/DeleteComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/class_component/DeleteComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/src/component/HeaderComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/class_component/HeaderComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/src/component/ListComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/class_component/ListComponent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_app/src/service/StudentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/service/StudentService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +78,9 @@
       <workItem from="1773927310696" duration="3004000" />
       <workItem from="1773979041265" duration="13000" />
       <workItem from="1774097138708" duration="501000" />
-      <workItem from="1774097910066" duration="4769000" />
+      <workItem from="1774097910066" duration="4860000" />
+      <workItem from="1774233516378" duration="16000" />
+      <workItem from="1774357904015" duration="3651000" />
     </task>
     <servers />
   </component>

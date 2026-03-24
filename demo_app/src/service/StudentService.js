@@ -1,6 +1,6 @@
 // gọi API
 
-import listComponent from "../component/ListComponent.jsx";
+import listComponent from "../class_component/ListComponent.jsx";
 
 const listStudent =[
     {
@@ -24,4 +24,7 @@ export function deleteById(id){
             break;
         }
     }
+}
+export function addNew(student){
+    listStudent.push(student);
 }
