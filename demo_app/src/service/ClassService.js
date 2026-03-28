@@ -1,20 +1,15 @@
-const classList =[
-    {
-        id:1,
-        name:"C05",
+import axios from "axios";
 
-    },
-    {
-        id: 2,
-        name: "C06",
-    },
-    {
-        id: 3,
-        name: "C07",
-    }
-]
+const BE_URL = "http://localhost:8080"
 
-export function getAll(){
+export async function getAll(){
     // call API của backend
-    return [...classList];
+    try{
+        const res = await axios.get(`${BE_URL}/classes`)
+        return res.data;
+    }catch (e){
+        console.log(e)
+    }
+    return [];
+
 }

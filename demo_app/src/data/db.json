@@ -1,0 +1,42 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Chanh Tran",
+      "classCG": {
+        "id": 2,
+        "name": "C06"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Tran Van",
+      "classCG": {
+        "id": 2,
+        "name": "C06"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Tien Len",
+      "classCG": {
+        "id": 3,
+        "name": "C07"
+      }
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "name": "C05"
+    },
+    {
+      "id": 2,
+      "name": "C06"
+    },
+    {
+      "id": 3,
+      "name": "C07"
+    }
+  ]
+}

@@ -6,7 +6,11 @@ const Detail =()=>{
     const [student,setStudent] = useState({});
     const {id} = useParams();
     useEffect(() => {
-        setStudent(findById(id))
+        const fetData = async ()=>{
+            setStudent(await findById(id))
+        }
+        fetData();
+
     }, []);
     return(
         <>

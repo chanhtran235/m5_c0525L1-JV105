@@ -16,7 +16,18 @@ function Add(){
     });
     const [classList, setClassList] = useState([])
     useEffect(() => {
-        setClassList([...getClassList()])
+
+        // cách 1 dùng asyn/await
+        const fetData = async()=>{
+            setClassList(await getClassList())
+        }
+        fetData();
+
+        // // cách 2 dùng promise
+        // getClassList().then(data =>{
+        //     setClassList(data);
+        // })
+
     }, []);
     const navigate = useNavigate();
 
@@ -26,14 +37,20 @@ function Add(){
             classCG: JSON.parse(value.classCG)
         }
         console.log(value);
-        addNew(value);
-        // // chuyển về list
-        toast.success("Thêm mới thành công");
-         navigate("/student");
+        const fetData = async ()=>{
+            let isSuccess = await addNew(value);
+            if (isSuccess){
+                toast.success("Thêm mới thành công");
+            }else {
+                toast.error("Thêm mới thất bại")
+            }
+            navigate("/student");
+        }
+        fetData();
     }
     const validation =Yup.object({
-        id:Yup.number().required("Yêu cầu nhập id")
-            .min(1,"Id phải là số dương"),
+        // id:Yup.number().required("Yêu cầu nhập id")
+        //     .min(1,"Id phải là số dương"),
         name:Yup.string().required("Yêu cầu nhập tên")
             .matches(/^[A-Z][a-z]*(\s[A-Z][a-z]*)+$/,"Tên không đúng định dạng"),
         classCG:Yup.string().required("Yeu cau chon lop")
@@ -42,11 +59,11 @@ function Add(){
         <>
             <Formik initialValues={student} onSubmit={handleAdd} validationSchema={validation}>
                 <Form>
-                    <div>
-                        <label>ID</label>
-                        <Field type ="text" name ="id"/>
-                        <ErrorMessage name={'id'} className={'text-danger'} component={'small'}/>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <label>ID</label>*/}
+                    {/*    <Field type ="text" name ="id"/>*/}
+                    {/*    <ErrorMessage name={'id'} className={'text-danger'} component={'small'}/>*/}
+                    {/*</div>*/}
                     <div>
                         <label>Name</label>
                         <Field type ="text" name ="name"/>

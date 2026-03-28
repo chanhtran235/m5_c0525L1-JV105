@@ -1,42 +1,51 @@
 // gọi API
 
 import listComponent from "../class_component/ListComponent.jsx";
+import axios from "axios";
 
-const listStudent =[
-    {
-        id:1,
-        name:"chánh",
-        classCG:{
-            id:1,
-            name:"C05",
-        }
-    },
-    {
-        id: 2,
-         name: "tiến",
-        classCG:{
-            id:1,
-            name:"C06",
-        }
-    }
-]
+const BE_URL = "http://localhost:8080"
 
-export function getAll(){
+export async function getAll(){
     // call API của backend
-    return [...listStudent];
-}
-export function deleteById(id){
-    for (let i = 0; i <listStudent.length ; i++) {
-        if (listStudent[i].id==id){
-            listStudent.splice(i,1);
-            break;
-        }
+    try{
+        const res = await axios.get(`${BE_URL}/students`)
+        return res.data;
+    }catch (e){
+        console.log(e)
     }
-}
-export function addNew(student){
-    listStudent.push(student);
-}
-export function findById(id){
+    return [];
 
-    return listStudent.find(e=>e.id==id);
+}
+export async function deleteById(id){
+    try{
+        const res = await axios.delete(`${BE_URL}/students/${id}`)
+        if (res.status=="200"){
+            return true;
+        }
+    }catch (e){
+        console.log(e)
+    }
+    return false;
+}
+export async function addNew(student){
+    try{
+        const res = await axios.post(`${BE_URL}/students`,student)
+        if (res.status=="201"){
+            return true;
+        }
+    }catch (e){
+        console.log(e)
+    }
+    return false;
+
+}
+export async function findById(id){
+
+    try{
+        const res = await axios.get(`${BE_URL}/students/${id}`)
+        return res.data;
+    }catch (e){
+        console.log(e)
+    }
+    return null;
 }

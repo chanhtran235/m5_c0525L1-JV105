@@ -2,11 +2,9 @@
 import React, {useEffect, useState} from "react";
 import {getAll} from "../service/StudentService.js";
 import Delete from "./Delete.jsx";
-import Add from "./Add.jsx";
 import {Link} from "react-router";
 
 const List =()=>{
-    // Destructring
     const [studentList,setStudentList] = useState([])
     const [deleteStudent,setDeleteStudent] = useState({
         id:"",
@@ -16,7 +14,12 @@ const List =()=>{
     const [isLoading, setIsLoading] = useState(false)
     useEffect(()=>{
         console.log("----useEffect--------")
-        setStudentList([...getAll()])
+        const fetData = async ()=>{
+            const listStudent = await getAll();
+            setStudentList(listStudent);
+        }
+        fetData();
+
     }, [isLoading]);
    const handleOpenModal =(student)=>{
        setDeleteStudent(student);
