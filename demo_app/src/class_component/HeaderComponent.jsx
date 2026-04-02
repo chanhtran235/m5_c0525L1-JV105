@@ -1,6 +1,13 @@
 import {Link} from "react-router";
+import {useDispatch, useSelector} from "react-redux";
+import {logout} from "../redux/action.js";
 
 function HeaderComponent (){
+    const myInfo = useSelector(state => state.account);
+    const dispatch = useDispatch();
+    const handleLogout =()=>{
+     dispatch(logout());
+    }
     return (
         <nav className="navbar navbar-expand-lg bg-light">
             <div className="container-fluid">
@@ -18,23 +25,14 @@ function HeaderComponent (){
                         <li className="nav-item">
                             <Link to={'/student'}>Student manager</Link>
                         </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Action</a></li>
-                                <li><a className="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr className="dropdown-divider"/>
-                                </li>
-                                <li><a className="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li className="nav-item">
+                            <Link to={'/login'}>Login</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link disabled">Disabled</a>
+                            <button onClick={handleLogout}>Logout</button>
                         </li>
+                        <li className="nav-item">{myInfo?.username}</li>
+
                     </ul>
                     <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>

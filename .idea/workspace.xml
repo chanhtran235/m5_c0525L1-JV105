@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f0d920-5cc1-4f85-9c85-c14a465c905f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo_app/src/data/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_app/src/component/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_app/src/redux/action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_app/src/redux/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_app/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_app/src/service/AccountService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_app/src/component/Add.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/component/Add.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_app/src/component/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/component/Detail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_app/src/component/List.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/component/List.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_app/src/service/ClassService.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/service/ClassService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_app/src/service/StudentService.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/service/StudentService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/src/class_component/HeaderComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/class_component/HeaderComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/src/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_app/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/demo_app/src/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -83,7 +86,9 @@
       <workItem from="1774357904015" duration="3729000" />
       <workItem from="1774432310314" duration="822000" />
       <workItem from="1774525697078" duration="5634000" />
-      <workItem from="1774703172896" duration="3326000" />
+      <workItem from="1774703172896" duration="3535000" />
+      <workItem from="1775101991246" duration="72000" />
+      <workItem from="1775130701437" duration="8797000" />
     </task>
     <servers />
   </component>

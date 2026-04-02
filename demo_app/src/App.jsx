@@ -10,12 +10,14 @@ import Home from "./component/Home.jsx";
 import Add from "./component/Add.jsx";
 import Detail from "./component/Detail.jsx";
 import {ToastContainer} from "react-toastify";
+import Login from "./component/Login.jsx";
 function App() {
   return (
       <>
           <HeaderComponent/>
           <Routes>
               <Route path={'/home'} element={<Home/>}/>
+              <Route path={'/login'} element={<Login/>}/>
               <Route path={'/student'} element={<List/>}/>
               <Route path={'/student/add'} element={<Add/>}/>
               <Route path={'/student/detail/:id'} element={<Detail/>}/>

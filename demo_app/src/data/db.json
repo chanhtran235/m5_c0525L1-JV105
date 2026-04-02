@@ -38,5 +38,19 @@
       "id": 3,
       "name": "C07"
     }
+  ],
+  "accounts" : [
+    {
+      "id": 1,
+      "username": "chanhtv",
+      "password":"123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "haitt",
+      "password":"123",
+      "role": "user"
+    }
   ]
 }
